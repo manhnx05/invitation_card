@@ -5,18 +5,28 @@ export default function CoupleProfile() {
   return (
     <section id="couple" className="bg-white py-20 border-y border-wedding-gold/10 overflow-hidden">
       <div className="max-w-5xl mx-auto px-4">
-        <div className="text-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
           <span className="text-wedding-gold font-script text-3xl md:text-4xl block mb-2">Cô Dâu &amp; Chú Rể</span>
           <h3 className="text-2xl md:text-3xl font-serif text-wedding-burgundy font-semibold">Tình Yêu Đích Thực</h3>
           <p className="text-sm text-gray-400 mt-2 font-sans max-w-xl mx-auto">
             "Hạnh phúc không phải là điểm đến, mà là hành trình chúng ta đang đi cùng nhau."
           </p>
-        </div>
+        </motion.div>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20">
           
           {/* GROOM */}
           <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             whileHover={{ y: -10 }}
             className="flex flex-col items-center max-w-xs text-center"
           >
@@ -54,6 +64,10 @@ export default function CoupleProfile() {
 
           {/* BRIDE */}
           <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.8, delay: 0.4 }}
             whileHover={{ y: -10 }}
             className="flex flex-col items-center max-w-xs text-center"
           >
