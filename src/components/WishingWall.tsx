@@ -45,7 +45,13 @@ export default function WishingWall({ greetings, onLike }: WishingWallProps) {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 py-8">
+    <motion.div 
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.8 }}
+      className="w-full max-w-4xl mx-auto px-4 py-8"
+    >
       <div className="text-center mb-8">
         <span className="text-wedding-gold font-script text-3xl block mb-2">Bức Tường Chúc Phúc</span>
         <h3 className="text-xl font-serif text-wedding-burgundy font-semibold">Lời Chúc Từ Khách Quý</h3>
@@ -134,6 +140,6 @@ export default function WishingWall({ greetings, onLike }: WishingWallProps) {
           </AnimatePresence>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 }
