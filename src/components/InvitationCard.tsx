@@ -9,14 +9,20 @@ interface InvitationCardProps {
 export default function InvitationCard({ guestName = 'Quý khách' }: InvitationCardProps) {
   const [activeTab, setActiveTab] = useState<'both' | 'thanhhon' | 'vuquy'>('both');
 
-  const openMap = (address: string) => {
-    window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`, '_blank');
+  const openMapLink = (url: string) => {
+    window.open(url, '_blank');
   };
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-8">
       {/* Decorative intro */}
-      <div className="text-center mb-8">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.8 }}
+        className="text-center mb-8"
+      >
         <div className="mb-6 mx-auto w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-wedding-gold/20 shadow-md overflow-hidden relative">
           <img src="/assets/img10.jpg" alt="Wedding Couple" className="absolute inset-0 w-full h-full object-cover object-[center_top]" />
         </div>
@@ -27,7 +33,7 @@ export default function InvitationCard({ guestName = 'Quý khách' }: Invitation
         <p className="text-sm text-gray-500 mt-2 font-sans max-w-md mx-auto leading-relaxed">
           Đến chung vui cùng gia đình và chúc phúc cho hai chúng tôi trong ngày trọng đại này.
         </p>
-      </div>
+      </motion.div>
 
       {/* Tabs for mobile or screen preference */}
       <div className="flex justify-center mb-8">
@@ -153,7 +159,7 @@ export default function InvitationCard({ guestName = 'Quý khách' }: Invitation
                 
                 <button
                   id="btn-map-thanhhon"
-                  onClick={() => openMap('Khối 7, Nghi Xuân, Hà Tĩnh')}
+                  onClick={() => openMapLink('https://maps.app.goo.gl/V4nLpmDPwZQbYT7d9')}
                   className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-wedding-gold/10 hover:bg-wedding-gold/20 text-wedding-gold-dark text-xs font-sans font-semibold rounded-full border border-wedding-gold/20 transition-all mx-auto cursor-pointer"
                 >
                   <MapPin className="w-3.5 h-3.5" />
@@ -229,7 +235,7 @@ export default function InvitationCard({ guestName = 'Quý khách' }: Invitation
                 </p>
                 <button
                   id="btn-map-vuquy"
-                  onClick={() => openMap('Thôn Khang Thịnh, Nghi Xuân, Hà Tĩnh')}
+                  onClick={() => openMapLink('https://maps.app.goo.gl/FyhASoHxTUCrYk3Y7')}
                   className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-wedding-gold/10 hover:bg-wedding-gold/20 text-wedding-gold-dark text-xs font-sans font-semibold rounded-full border border-wedding-gold/20 transition-all mx-auto cursor-pointer"
                 >
                   <MapPin className="w-3.5 h-3.5" />
