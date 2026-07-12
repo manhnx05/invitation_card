@@ -73,33 +73,45 @@ export default function Countdown({
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center w-full max-w-lg mx-auto p-4">
-      <div className="flex items-center gap-1.5 mb-4">
-        <Clock className="w-4.5 h-4.5 text-wedding-gold animate-pulse" />
-        <span className="text-xs tracking-widest uppercase text-wedding-burgundy font-semibold font-sans">
+    <div className="flex flex-col items-center justify-center w-full max-w-2xl mx-auto p-4 my-4">
+      {/* Premium Header */}
+      <div className="flex flex-col items-center mb-8 text-center">
+        <div className="flex items-center gap-4 mb-3 opacity-80">
+          <div className="h-[1px] w-10 md:w-16 bg-gradient-to-r from-transparent to-wedding-gold" />
+          <Calendar className="w-4 h-4 text-wedding-gold" />
+          <div className="h-[1px] w-10 md:w-16 bg-gradient-to-l from-transparent to-wedding-gold" />
+        </div>
+        <span className="text-xs md:text-sm tracking-[0.2em] uppercase text-wedding-burgundy font-semibold font-sans">
           {title}
         </span>
       </div>
 
-      <div className="flex justify-center gap-3 md:gap-6 w-full mt-2">
+      {/* Countdown Blocks */}
+      <div className="flex justify-center gap-3 md:gap-5 w-full">
         {timeBlocks.map((block, index) => (
           <motion.div
             key={block.label}
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            className="flex flex-col items-center justify-center w-[70px] h-[70px] md:w-[90px] md:h-[90px] rounded-full border border-wedding-gold/40 bg-white shadow-sm hover:shadow-md transition-all relative overflow-hidden group"
+            transition={{ delay: index * 0.15, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="relative flex flex-col items-center justify-center w-[76px] h-[100px] md:w-[90px] md:h-[120px] rounded-t-full rounded-b-2xl border border-wedding-gold/30 bg-white/80 backdrop-blur-sm shadow-[0_8px_30px_rgba(179,138,85,0.12)] group hover:-translate-y-2 transition-transform duration-500 overflow-hidden"
           >
-            {/* Elegant inner ring */}
-            <div className="absolute inset-1 rounded-full border border-wedding-gold/10 pointer-events-none" />
+            {/* Elegant Inner Arch */}
+            <div className="absolute inset-1.5 md:inset-2 rounded-t-full rounded-b-xl border border-wedding-gold/15 pointer-events-none" />
             
-            {/* Soft decorative background pattern */}
-            <div className="absolute inset-0 bg-gradient-to-br from-wedding-cream to-white opacity-40 group-hover:bg-wedding-cream/80 transition-colors duration-500 pointer-events-none" />
-            
-            <span className="text-xl md:text-3xl font-bold font-serif text-wedding-burgundy z-10 leading-none">
+            {/* Subtle Gradient Hover */}
+            <div className="absolute inset-0 bg-gradient-to-b from-wedding-cream/0 to-wedding-cream/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+            {/* Time Value */}
+            <span className="text-2xl md:text-4xl font-serif text-wedding-burgundy z-10 leading-none mt-2">
               {String(block.value).padStart(2, '0')}
             </span>
-            <span className="text-[9px] md:text-[11px] text-wedding-gold uppercase tracking-widest font-bold mt-1 z-10">
+            
+            {/* Divider Line */}
+            <div className="w-6 h-[1px] bg-wedding-gold/40 my-2 md:my-3 z-10 transition-all duration-500 group-hover:w-8 group-hover:bg-wedding-burgundy/40" />
+            
+            {/* Label */}
+            <span className="text-[9px] md:text-[11px] text-gray-500 uppercase tracking-widest font-sans font-medium z-10">
               {block.label}
             </span>
           </motion.div>
