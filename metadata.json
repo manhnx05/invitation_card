@@ -1,0 +1,6 @@
+{
+  "name": "Thiệp Cưới Online",
+  "description": "Thiệp mời đám cưới trực tuyến sang trọng dành cho Quang Hiếu và Việt Anh với hiệu ứng hoạt họa tinh tế.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
