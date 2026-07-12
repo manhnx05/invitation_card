@@ -32,13 +32,19 @@ export default function LoveStory() {
       <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[radial-gradient(#b38a55_1px,transparent_1px)] [background-size:24px_24px]" />
       
       <div className="max-w-4xl mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
           <span className="text-wedding-gold font-script text-3xl md:text-4xl block mb-2">Chuyện Tình Yêu</span>
           <h3 className="text-2xl md:text-3xl font-serif text-wedding-burgundy font-semibold">Hành Trình Của Chúng Ta</h3>
           <p className="text-sm text-gray-500 mt-2 font-sans max-w-lg mx-auto">
             Mỗi câu chuyện tình yêu đều có những cột mốc đáng nhớ. Hãy cùng nhìn lại những khoảnh khắc tuyệt vời mà chúng tôi đã trải qua.
           </p>
-        </div>
+        </motion.div>
 
         <div className="relative">
           {/* Vertical Center Line for Desktop */}
@@ -51,7 +57,14 @@ export default function LoveStory() {
             {STORY_EVENTS.map((event, index) => {
               const isEven = index % 2 === 0;
               return (
-                <div key={event.id} className={`relative flex flex-col md:flex-row items-center gap-8 md:gap-16 ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                <motion.div 
+                  key={event.id}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.8 }}
+                  className={`relative flex flex-col md:flex-row items-center gap-8 md:gap-16 ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'}`}
+                >
                   
                   {/* Timeline Dot */}
                   <div className="absolute left-8 md:left-1/2 w-8 h-8 rounded-full bg-wedding-cream border-2 border-wedding-gold flex items-center justify-center -translate-x-1/2 shadow-md z-10">
@@ -80,7 +93,7 @@ export default function LoveStory() {
                     </p>
                   </div>
 
-                </div>
+                </motion.div>
               );
             })}
           </div>
