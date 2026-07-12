@@ -171,9 +171,53 @@ export default function App() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="space-y-6 max-w-2xl z-10"
               >
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-wedding-burgundy/5 border border-wedding-gold/20 rounded-full text-[10px] tracking-widest uppercase font-bold text-wedding-burgundy font-sans">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-wedding-burgundy/5 border border-wedding-gold/20 rounded-full text-[10px] tracking-widest uppercase font-bold text-wedding-burgundy font-sans mb-8">
                   <Sparkles className="w-3.5 h-3.5 text-wedding-gold animate-spin" />
                   Save The Date • 19.07.2026
+                </div>
+
+                {/* Decorative Envelope with Photos */}
+                <div className="relative w-56 h-36 md:w-72 md:h-48 mx-auto my-6 flex items-end justify-center z-10">
+                  {/* Back of Envelope */}
+                  <div className="absolute bottom-0 w-full h-24 md:h-32 bg-[#e8dbcc] rounded-b-md shadow-sm border border-wedding-gold/20" />
+                  
+                  {/* Envelope Flap (Open) */}
+                  <div 
+                    className="absolute bottom-24 md:bottom-32 w-full h-16 md:h-20 bg-[#f4ebe1] origin-bottom border-t border-wedding-gold/20"
+                    style={{ clipPath: 'polygon(50% 0, 100% 100%, 0 100%)' }}
+                  />
+
+                  {/* Photo 1 (Left) */}
+                  <motion.img 
+                    src="/assets/img8.jpg" 
+                    initial={{ y: 50, rotate: 0, opacity: 0 }}
+                    animate={{ y: -35, rotate: -14, opacity: 1 }}
+                    transition={{ delay: 0.6, type: "spring", stiffness: 90 }}
+                    className="absolute bottom-2 left-6 md:left-10 w-24 h-32 md:w-32 md:h-44 object-cover rounded-[2px] border-[4px] border-white shadow-lg z-10 pointer-events-none"
+                  />
+
+                  {/* Photo 2 (Right) */}
+                  <motion.img 
+                    src="/assets/img9.jpg" 
+                    initial={{ y: 50, rotate: 0, opacity: 0 }}
+                    animate={{ y: -20, rotate: 10, opacity: 1 }}
+                    transition={{ delay: 0.8, type: "spring", stiffness: 90 }}
+                    className="absolute bottom-2 right-6 md:right-10 w-24 h-32 md:w-32 md:h-44 object-cover rounded-[2px] border-[4px] border-white shadow-lg z-10 pointer-events-none"
+                  />
+
+                  {/* Front of Envelope */}
+                  <div 
+                    className="absolute bottom-0 w-full h-24 md:h-32 bg-[#fdfbf7] shadow-[0_-5px_15px_rgba(0,0,0,0.05)] z-20 border border-wedding-gold/20 flex items-center justify-center overflow-hidden rounded-b-md"
+                  >
+                     {/* Envelope folded details */}
+                     <div className="absolute bottom-0 left-0 w-full h-full" style={{ background: 'linear-gradient(135deg, transparent 49.5%, rgba(179,138,85,0.2) 50%, transparent 50.5%)' }} />
+                     <div className="absolute bottom-0 right-0 w-full h-full" style={{ background: 'linear-gradient(-135deg, transparent 49.5%, rgba(179,138,85,0.2) 50%, transparent 50.5%)' }} />
+                     
+                     {/* Wax seal */}
+                     <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-wedding-burgundy border-2 border-wedding-gold shadow-inner flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                       <Heart className="w-3 h-3 md:w-4 md:h-4 text-wedding-gold fill-wedding-gold" />
+                     </div>
+                  </div>
                 </div>
 
                 <div className="space-y-1">
@@ -280,7 +324,7 @@ export default function App() {
 
                     <button
                       id="btn-navigate-vuquy"
-                      onClick={() => window.open('https://www.google.com/maps/search/?api=1&query=Thôn+Khang+Thạnh,+Nghi+Xuân,+Hà+Tĩnh', '_blank')}
+                      onClick={() => window.open('https://maps.app.goo.gl/FyhASoHxTUCrYk3Y7', '_blank')}
                       className="w-full mt-6 py-2.5 border border-wedding-gold/30 hover:border-wedding-gold text-wedding-gold-dark rounded-xl text-xs font-sans font-bold flex items-center justify-center gap-2 transition-all cursor-pointer hover:bg-wedding-gold/5"
                     >
                       <Navigation className="w-3.5 h-3.5" />
@@ -324,7 +368,7 @@ export default function App() {
 
                     <button
                       id="btn-navigate-thanhhon"
-                      onClick={() => window.open('https://www.google.com/maps/search/?api=1&query=Khối+7,+Nghi+Xuân,+Hà+Tĩnh', '_blank')}
+                      onClick={() => window.open('https://maps.app.goo.gl/V4nLpmDPwZQbYT7d9', '_blank')}
                       className="w-full mt-6 py-2.5 border border-wedding-gold/30 hover:border-wedding-gold text-wedding-gold-dark rounded-xl text-xs font-sans font-bold flex items-center justify-center gap-2 transition-all cursor-pointer hover:bg-wedding-gold/5"
                     >
                       <Navigation className="w-3.5 h-3.5" />
