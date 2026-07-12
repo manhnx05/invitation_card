@@ -41,7 +41,13 @@ export default function RsvpForm({ onSubmit, guestName = '' }: RsvpFormProps) {
   };
 
   return (
-    <div className="w-full max-w-xl mx-auto px-4 py-8">
+    <motion.div 
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.8 }}
+      className="w-full max-w-xl mx-auto px-4 py-8"
+    >
       <div className="bg-white rounded-2xl border border-wedding-gold/20 p-6 md:p-8 shadow-xl relative overflow-hidden wedding-card-glow">
         {/* Border Deco */}
         <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-wedding-gold-light via-wedding-burgundy to-wedding-gold-light" />
@@ -250,6 +256,6 @@ export default function RsvpForm({ onSubmit, guestName = '' }: RsvpFormProps) {
           )}
         </AnimatePresence>
       </div>
-    </div>
+    </motion.div>
   );
 }
