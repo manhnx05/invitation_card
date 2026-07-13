@@ -10,20 +10,20 @@ export default function GiftCorner() {
     {
       id: 'groom',
       title: 'Chú Rể Quang Hiếu',
-      bankName: 'Ngân hàng TMCP Ngoại Thương Việt Nam (Vietcombank)',
-      accountNumber: '1023456789',
+      bankName: 'Ngân hàng TMCP Quân Đội (MB Bank)',
+      accountNumber: '88141266778899',
       accountName: 'NGUYEN QUANG HIEU',
-      branch: 'Chi nhánh Hà Tĩnh',
-      qrUrl: 'https://img.vietqr.io/image/VCB-1023456789-compact2.png?amount=200000&addInfo=Chuc%20mung%20hanh%20phuc%20Quang%20Hieu%20Viet%20Anh'
+      branch: 'Hội sở chính',
+      qrUrl: 'https://img.vietqr.io/image/MB-88141266778899-compact2.png?accountName=NGUYEN%20QUANG%20HIEU&addInfo=Chuc%20mung%20hanh%20phuc%20Quang%20Hieu%20Viet%20Anh'
     },
     {
       id: 'bride',
       title: 'Cô Dâu Việt Anh',
-      bankName: 'Ngân hàng TMCP Đầu tư và Phát triển Việt Nam (BIDV)',
-      accountNumber: '2024567890',
-      accountName: 'NGUYEN THI VIET ANH',
-      branch: 'Chi nhánh Hà Tĩnh',
-      qrUrl: 'https://img.vietqr.io/image/BIDV-2024567890-compact2.png?amount=200000&addInfo=Chuc%20mung%20hanh%20phuc%20Quang%20Hieu%20Viet%20Anh'
+      bankName: 'Ngân hàng TMCP Kỹ thương Việt Nam (Techcombank)',
+      accountNumber: '19072187716014',
+      accountName: 'NGUYEN XUAN MANH',
+      branch: 'Hội sở chính',
+      qrUrl: 'https://img.vietqr.io/image/TCB-19072187716014-compact2.png?accountName=NGUYEN%20XUAN%20MANH&addInfo=Chuc%20mung%20hanh%20phuc%20Quang%20Hieu%20Viet%20Anh'
     }
   ];
 
