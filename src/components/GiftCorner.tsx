@@ -14,7 +14,7 @@ export default function GiftCorner() {
       accountNumber: '88141266778899',
       accountName: 'NGUYEN QUANG HIEU',
       branch: 'Hội sở chính',
-      qrUrl: 'https://img.vietqr.io/image/MB-88141266778899-compact2.png?accountName=NGUYEN%20QUANG%20HIEU&addInfo=Chuc%20mung%20hanh%20phuc%20Quang%20Hieu%20Viet%20Anh'
+      qrUrl: 'https://img.vietqr.io/image/MB-88141266778899-compact2.png?accountName=NGUYEN%20QUANG%20HIEU'
     },
     {
       id: 'bride',
@@ -23,7 +23,7 @@ export default function GiftCorner() {
       accountNumber: '19072187716014',
       accountName: 'NGUYEN XUAN MANH',
       branch: 'Hội sở chính',
-      qrUrl: 'https://img.vietqr.io/image/TCB-19072187716014-compact2.png?accountName=NGUYEN%20XUAN%20MANH&addInfo=Chuc%20mung%20hanh%20phuc%20Quang%20Hieu%20Viet%20Anh'
+      qrUrl: 'https://img.vietqr.io/image/TCB-19072187716014-compact2.png?accountName=NGUYEN%20XUAN%20MANH'
     }
   ];
 
@@ -162,7 +162,7 @@ export default function GiftCorner() {
         <div className="mt-5 p-3.5 bg-amber-50/50 border border-amber-100 rounded-xl flex gap-2.5 items-start">
           <AlertCircle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
           <p className="text-[10px] text-amber-800 leading-relaxed font-sans">
-            QR code được tích hợp sẵn thông tin chuyển khoản chính xác của cô dâu và chú rể kèm nội dung lời chúc mừng cưới tự động để quý khách thuận tiện sử dụng.
+            Mã QR đã được tích hợp sẵn thông tin tài khoản chính xác để quý khách thuận tiện sử dụng. Quý khách vui lòng tự điền số tiền và nội dung lời chúc nhé!
           </p>
         </div>
       </div>
