@@ -10,6 +10,7 @@ import Envelope from './components/Envelope';
 import Countdown from './components/Countdown';
 import InvitationCard from './components/InvitationCard';
 import RsvpForm from './components/RsvpForm';
+import WeddingDate from './components/WeddingDate';
 import WishingWall from './components/WishingWall';
 import GiftCorner from './components/GiftCorner';
 import AudioPlayer from './components/AudioPlayer';
@@ -238,6 +239,9 @@ export default function App() {
                   <Heart className="w-5 h-5 text-wedding-burgundy animate-pulse" />
                   <div className="h-[1px] w-12 bg-wedding-gold/30" />
                 </div>
+
+                {/* Prominent Date & Calendar */}
+                <WeddingDate />
 
                 {/* Countdown Timer */}
                 <div className="pt-4">
