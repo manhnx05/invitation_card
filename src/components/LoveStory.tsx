@@ -4,7 +4,7 @@ import { Heart } from 'lucide-react';
 const STORY_EVENTS = [
   {
     id: 1,
-    date: '14 Tháng 02, 2023',
+    date: '02 tháng 09 năm 2019',
     title: 'Lần Đầu Gặp Gỡ',
     content: 'Một buổi chiều xuân nhẹ nhàng, định mệnh đã sắp đặt để chúng ta lướt qua nhau. Một nụ cười vô tình đã khiến trái tim xao xuyến, để rồi từ đó một hạt mầm tình yêu bắt đầu nảy nở.',
     image: '/assets/img3.jpg'
