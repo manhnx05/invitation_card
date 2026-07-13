@@ -248,7 +248,7 @@ export default function InvitationCard({ guestName = 'Quý khách' }: Invitation
                 <div className="border border-wedding-gold/20 rounded-lg p-3 max-w-xs mx-auto bg-wedding-cream/40 flex items-center gap-3">
                   <div className="text-right border-r border-wedding-gold/20 pr-3 w-1/3">
                     <span className="text-xs text-gray-400 font-sans block uppercase">Vào lúc</span>
-                    <span className="text-xl md:text-2xl font-serif font-bold text-wedding-burgundy">17:00</span>
+                    <span className="text-xl md:text-2xl font-serif font-bold text-wedding-burgundy">15:30</span>
                   </div>
                   <div className="text-left w-2/3">
                     <span className="text-xs font-bold text-wedding-gold font-sans block">THỨ SÁU - 17/07/2026</span>

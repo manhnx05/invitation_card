@@ -310,7 +310,7 @@ export default function App() {
                           <Calendar className="w-4 h-4 text-wedding-gold flex-shrink-0 mt-0.5" />
                           <div>
                             <span className="block text-gray-400 text-[10px] uppercase font-semibold">Thời gian</span>
-                            <span className="font-bold text-wedding-charcoal">17:00 • Thứ Sáu, Ngày 17/07/2026</span>
+                            <span className="font-bold text-wedding-charcoal">15:30 • Thứ Sáu, Ngày 17/07/2026</span>
                             <span className="block text-gray-400 text-[10px] italic mt-0.5">(Tức ngày 04 tháng 06 năm Bính Ngọ)</span>
                           </div>
                         </div>
