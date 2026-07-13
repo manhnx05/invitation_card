@@ -133,7 +133,7 @@ export default function InvitationCard({ guestName = 'Quý khách' }: Invitation
                     <span className="block text-base md:text-lg font-semibold text-wedding-gold font-sans">2026</span>
                   </div>
                   <div className="relative px-4 md:px-6">
-                    <span className="text-6xl md:text-7xl font-serif text-wedding-gold font-bold leading-none block pb-2">19</span>
+                    <span className="text-6xl md:text-7xl font-serif text-wedding-gold font-bold leading-none block pb-2 relative -top-2 md:-top-3">19</span>
                     <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-white border border-wedding-gold/30 px-5 py-1.5 rounded text-xs md:text-sm font-bold font-sans text-wedding-burgundy whitespace-nowrap shadow-sm">
                       CHỦ NHẬT
                     </div>
