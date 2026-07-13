@@ -25,22 +25,22 @@ export default function WeddingDate() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="flex items-center justify-center gap-4 md:gap-8 mb-10"
+        className="flex items-center justify-center w-full max-w-sm mx-auto mb-10"
       >
-        <div className="text-xs md:text-sm font-sans tracking-[0.2em] uppercase text-wedding-burgundy font-semibold w-24 text-right">
+        <div className="flex-1 text-[11px] md:text-sm font-sans tracking-[0.1em] md:tracking-[0.2em] uppercase text-wedding-burgundy font-semibold text-right pr-4 md:pr-8 whitespace-nowrap">
           Chủ Nhật
         </div>
         
-        <div className="flex flex-col items-center justify-center border-l border-r border-wedding-gold/40 px-6 md:px-10">
+        <div className="flex flex-col items-center justify-center border-l border-r border-wedding-gold/40 px-5 md:px-8">
           <span className="text-5xl md:text-7xl font-serif text-wedding-burgundy font-bold leading-none mb-2 tracking-tight">
             19
           </span>
-          <span className="text-xs md:text-sm font-sans tracking-[0.3em] text-wedding-gold-dark font-semibold">
+          <span className="text-[10px] md:text-xs font-sans tracking-[0.3em] text-wedding-gold-dark font-semibold">
             2026
           </span>
         </div>
 
-        <div className="text-xs md:text-sm font-sans tracking-[0.2em] uppercase text-wedding-burgundy font-semibold w-24 text-left">
+        <div className="flex-1 text-[11px] md:text-sm font-sans tracking-[0.1em] md:tracking-[0.2em] uppercase text-wedding-burgundy font-semibold text-left pl-4 md:pl-8 whitespace-nowrap">
           Tháng 7
         </div>
       </motion.div>
