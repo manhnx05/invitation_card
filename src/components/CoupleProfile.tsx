@@ -30,8 +30,8 @@ export default function CoupleProfile() {
             whileHover={{ y: -10 }}
             className="flex flex-col items-center max-w-xs text-center"
           >
-            <div className="w-48 h-48 md:w-56 md:h-56 rounded-t-full rounded-b-xl overflow-hidden border-4 border-wedding-gold/20 shadow-xl mb-6 relative">
-              <img src="/assets/img11.jpg" alt="Chú Rể Quang Hiếu" className="w-full h-full object-cover" />
+            <div className="w-56 h-72 md:w-64 md:h-80 rounded-t-[140px] rounded-b-xl overflow-hidden border-4 border-wedding-gold/20 shadow-xl mb-6 relative">
+              <img src="/assets/img11.jpg" alt="Chú Rể Quang Hiếu" className="w-full h-full object-cover object-[center_top]" />
               <div className="absolute inset-0 bg-wedding-burgundy/10 pointer-events-none" />
             </div>
             <h4 className="text-2xl font-serif text-wedding-charcoal font-bold mb-1">Quang Hiếu</h4>
@@ -71,8 +71,8 @@ export default function CoupleProfile() {
             whileHover={{ y: -10 }}
             className="flex flex-col items-center max-w-xs text-center"
           >
-            <div className="w-48 h-48 md:w-56 md:h-56 rounded-t-full rounded-b-xl overflow-hidden border-4 border-wedding-gold/20 shadow-xl mb-6 relative">
-              <img src="/assets/img12.jpg" alt="Cô Dâu Việt Anh" className="w-full h-full object-cover" />
+            <div className="w-56 h-72 md:w-64 md:h-80 rounded-t-[140px] rounded-b-xl overflow-hidden border-4 border-wedding-gold/20 shadow-xl mb-6 relative">
+              <img src="/assets/img12.jpg" alt="Cô Dâu Việt Anh" className="w-full h-full object-cover object-[center_top]" />
               <div className="absolute inset-0 bg-wedding-burgundy/10 pointer-events-none" />
             </div>
             <h4 className="text-2xl font-serif text-wedding-charcoal font-bold mb-1">Việt Anh</h4>
