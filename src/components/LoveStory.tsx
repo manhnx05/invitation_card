@@ -11,7 +11,7 @@ const STORY_EVENTS = [
   },
   {
     id: 2,
-    date: '08 Tháng 08, 2023',
+    date: '02 tháng 10 năm 2019',
     title: 'Lời Tỏ Tình Ngại Ngùng',
     content: 'Dưới ánh hoàng hôn lãng mạn, một lời tỏ tình ngại ngùng nhưng vô cùng chân thành đã được nói ra. Kể từ khoảnh khắc cái gật đầu ấy, chúng ta chính thức thuộc về nhau.',
     image: '/assets/img4.jpg'
