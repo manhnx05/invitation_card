@@ -126,24 +126,24 @@ export default function InvitationCard({ guestName = 'Quý khách' }: Invitation
               </div>
 
               {/* Date Block */}
-              <div className="my-6 text-center z-10">
-                <div className="flex items-center justify-center gap-4 border-y border-wedding-gold/20 py-3 max-w-xs mx-auto">
+              <div className="my-8 text-center z-10">
+                <div className="flex items-center justify-center gap-6 md:gap-8 border-y border-wedding-gold/20 py-5 max-w-sm mx-auto">
                   <div className="text-right">
-                    <span className="block text-xs text-gray-500 font-sans tracking-wider">THÁNG 07</span>
-                    <span className="block text-sm font-semibold text-wedding-gold font-sans">2026</span>
+                    <span className="block text-sm md:text-base text-gray-500 font-sans tracking-wider mb-1">THÁNG 07</span>
+                    <span className="block text-base md:text-lg font-semibold text-wedding-gold font-sans">2026</span>
                   </div>
-                  <div className="relative px-3">
-                    <span className="text-5xl md:text-6xl font-serif text-wedding-gold font-bold">19</span>
-                    <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white border border-wedding-gold/30 px-3 py-1 rounded text-[10px] font-bold font-sans text-wedding-burgundy whitespace-nowrap">
+                  <div className="relative px-4 md:px-6">
+                    <span className="text-6xl md:text-7xl font-serif text-wedding-gold font-bold leading-none block pb-2">19</span>
+                    <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-white border border-wedding-gold/30 px-5 py-1.5 rounded text-xs md:text-sm font-bold font-sans text-wedding-burgundy whitespace-nowrap shadow-sm">
                       CHỦ NHẬT
                     </div>
                   </div>
                   <div className="text-left">
-                    <span className="block text-xs text-gray-500 font-sans tracking-wider">10:30 PHÚT</span>
-                    <span className="block text-[10px] font-semibold text-wedding-burgundy font-sans uppercase">SÁNG</span>
+                    <span className="block text-sm md:text-base text-gray-500 font-sans tracking-wider mb-1">10:30 PHÚT</span>
+                    <span className="block text-xs md:text-sm font-semibold text-wedding-burgundy font-sans uppercase">SÁNG</span>
                   </div>
                 </div>
-                <p className="text-xs text-gray-500 italic mt-6 font-serif">
+                <p className="text-sm text-gray-500 italic mt-8 font-serif">
                   ( Tức ngày 06 tháng 06 năm Bính Ngọ )
                 </p>
               </div>
